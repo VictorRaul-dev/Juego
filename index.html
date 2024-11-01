@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado con el título y bienvenida -->
+    <header class="header">
+        <h1>Bienvenidos a los juegos de Maria</h1>
+        <p>Selecciona un juego</p>
+    </header>
+
+    <!-- Menú principal de juegos -->
+    <main class="game-menu">
+        <button class="game-button" onclick="startMemoryGame()">Juego de Memoria</button>
+        <button class="game-button" onclick="startColoringGame()">Colorear</button>
+        <button class="game-button" onclick="startCountingGame()">Count and Learn</button>
+        <button class="game-button" onclick="startPuzzleGame()">Puzzle</button>
+    </main>
+
+    <!-- Sección de Juegos (oculta inicialmente) -->
+    <section id="game-section" class="game-section hidden">
+        <div id="memory-game" class="game hidden">
+            <h2>Juego de Memoria</h2>
+            <div class="memory-grid" id="memory-grid"></div>
+            <button onclick="goBack()">Regresar al Menu</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
